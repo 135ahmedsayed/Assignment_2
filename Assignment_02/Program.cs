@@ -77,6 +77,18 @@
                 Console.Write($"{i}" + ' ');
             }
             #endregion
+            #region Q7
+            Console.WriteLine("\n");
+            int NumMultiplication;
+            Console.Write("Enter Number : ");
+            NumMultiplication = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i < 13; i++)
+            {
+                int result = NumMultiplication * i;
+                Console.Write($"{result}" + ' ');
+            }
+            Console.WriteLine("\n");
+            #endregion
             Console.ReadKey();
         }
     }
