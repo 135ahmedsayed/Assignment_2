@@ -35,6 +35,15 @@
             Console.WriteLine("Maximum Number is : " + max);
             Console.WriteLine("Minimum Number is : " + min);
             #endregion
+            #region Q4
+            int Num_Check;
+            Console.Write("Enter Number : ");
+            Num_Check = Convert.ToInt32(Console.ReadLine());
+            if (Num_Check % 2 == 0)
+                Console.WriteLine("Even Number");
+            else
+                Console.WriteLine("Odd Number");
+            #endregion
             Console.ReadKey();
         }
     }
