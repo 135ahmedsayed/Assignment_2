@@ -178,6 +178,19 @@
             }
             Console.WriteLine("\n");
             #endregion
+            #region Q13
+            int[,] Sum = new int[2, 2] { { 2, 2 }, { 3, 3 } };
+            int temp = 0;
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    temp += Sum[i, j];  //{{(0,0),(0,1)},{(1,0),(1,1)}}
+                }
+            }
+            Console.WriteLine("the sum of all elements : " + $"{temp}"); //  = 10
+            Console.WriteLine("\n");
+            #endregion
             Console.ReadKey();
         }
     }
