@@ -191,6 +191,27 @@
             Console.WriteLine("the sum of all elements : " + $"{temp}"); //  = 10
             Console.WriteLine("\n");
             #endregion
+            #region Q14
+            int[] freq = new int[] { 1, 1, 2, 5, 1, 2 };
+            int[] tp = new int[] { 0, 0, 0, 0, 0, 0 };
+            int[] count = new int[] { 0, 0, 0, 0, 0, 0 };
+            for (int i = 0; i < freq.Length; i++)
+            {
+                for (int j = 0; j < freq.Length; j++)
+                {
+                    if (freq[i] == freq[j])
+                    {
+                        count[i]++;
+                        tp[i] = freq[i];
+                    }
+                }
+
+            }
+            for (int i = 0; i < tp.Length; i++)
+            {
+                Console.WriteLine("The frequency of " + $"{tp[i]}" + " is : " + $"{count[i]}");
+            }
+            #endregion
             Console.ReadKey();
         }
     }
