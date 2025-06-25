@@ -89,6 +89,16 @@
             }
             Console.WriteLine("\n");
             #endregion
+            #region Q8
+            int Even;
+            Console.Write("Enter Number : ");
+            Even = Convert.ToInt32(Console.ReadLine());
+            for (int i = 2; i <= Even; i++)
+            {
+                if (i % 2 == 0)
+                    Console.Write($"{i}" + ' ');
+            }
+            #endregion
             Console.ReadKey();
         }
     }
