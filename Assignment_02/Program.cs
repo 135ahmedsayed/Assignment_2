@@ -225,6 +225,25 @@
             Console.WriteLine("Maximum Number is : " + $"{maximum}");
             Console.WriteLine("Minimum Number is : " + $"{minimum}");
             #endregion
+            #region Q16
+            int[] arr1 = new int[] { 727, 102, 901, 20, 10 };
+            int T = 0;
+            int[] sorted = new int[arr1.Length];
+            for (int i = 0; i < arr1.Length; i++)
+            {
+                for (int j = i + 1; j < arr1.Length; j++)
+                {
+                    if (arr1[i] > arr1[j])
+                    {
+                        T = arr1[i];
+                        arr1[i] = arr1[j];
+                        arr1[j] = T;
+                    }
+                }
+            }
+            Console.Write(" the second largest element  : ");
+            Console.WriteLine(arr1[arr1.Length - 2]); // 727
+            #endregion
             Console.ReadKey();
         }
     }
