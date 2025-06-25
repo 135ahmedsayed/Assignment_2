@@ -111,6 +111,26 @@
                 num1 *= t;
             Console.WriteLine("Result is : " + $"{num1}");
             #endregion
+            #region Q10
+            Console.WriteLine("\n");
+            double[] grads = new double[5];
+            double Total_marks = 0, Average = 0, Percentage = 0;
+            for (int i = 1; i <= grads.Length; i++)
+            {
+                Console.Write("Enter First Subject " + i + ':');
+                grads[i - 1] = Convert.ToDouble(Console.ReadLine());
+            }
+            for (int i = 0; i < grads.Length; i++)
+            {
+                Total_marks += grads[i];
+            }
+            Average = Total_marks / grads.Length;
+            Percentage = (Total_marks / (grads.Length * 100)) * 100;
+            Console.WriteLine("Total Marks is : " + $"{Total_marks}");
+            Console.WriteLine("Average Marks is : " + $"{Average}");
+            Console.WriteLine("Percentage is : " + $"{Percentage}");
+            Console.WriteLine("\n");
+            #endregion
             Console.ReadKey();
         }
     }
