@@ -68,6 +68,15 @@
                     break;
             }
             #endregion
+            #region Q6
+            int n;
+            Console.Write("Enter Number : ");
+            n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= n; i++)
+            {
+                Console.Write($"{i}" + ' ');
+            }
+            #endregion
             Console.ReadKey();
         }
     }
