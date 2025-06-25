@@ -99,6 +99,18 @@
                     Console.Write($"{i}" + ' ');
             }
             #endregion
+            #region Q9
+            Console.WriteLine("\n");
+            int num1, power, t;
+            Console.Write("Enter Number : ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Power: ");
+            power = Convert.ToInt32(Console.ReadLine());
+            t = num1;
+            for (int i = 1; i < power; i++)
+                num1 *= t;
+            Console.WriteLine("Result is : " + $"{num1}");
+            #endregion
             Console.ReadKey();
         }
     }
