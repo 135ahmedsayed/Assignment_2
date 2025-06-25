@@ -212,6 +212,19 @@
                 Console.WriteLine("The frequency of " + $"{tp[i]}" + " is : " + $"{count[i]}");
             }
             #endregion
+            #region Q15
+            Console.WriteLine("\n");
+            int[] arr = new int[] { 727, 102, 901, 20, 10 };
+            int maximum = arr[0];
+            int minimum = arr[0];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                maximum = Math.Max(maximum, arr[i]); //901
+                minimum = Math.Min(minimum, arr[i]); //10
+            }
+            Console.WriteLine("Maximum Number is : " + $"{maximum}");
+            Console.WriteLine("Minimum Number is : " + $"{minimum}");
+            #endregion
             Console.ReadKey();
         }
     }
