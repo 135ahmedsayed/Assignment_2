@@ -161,6 +161,23 @@
             }
             Console.WriteLine("\n");
             #endregion
+            #region Q12
+            int[,] matrix_Identity = new int[n, n];
+            Console.Write("Enter Size of Identity Matrix : ");
+            n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    if (i == j)
+                        Console.Write("1");
+                    else
+                        Console.Write("0");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("\n");
+            #endregion
             Console.ReadKey();
         }
     }
