@@ -44,6 +44,30 @@
             else
                 Console.WriteLine("Odd Number");
             #endregion
+            #region Q5
+            char ch;
+            Console.Write("Enter Character Please : ");
+            ch = Convert.ToChar(Console.ReadLine()!);
+            //I will use Switch
+            switch (ch)
+            {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                case 'A':
+                case 'E':
+                case 'I':
+                case 'O':
+                case 'U':
+                    Console.WriteLine("Vowel");
+                    break;
+                default:
+                    Console.WriteLine("Consonant");
+                    break;
+            }
+            #endregion
             Console.ReadKey();
         }
     }
