@@ -13,6 +13,15 @@
             else
                 Console.WriteLine("No");
             #endregion
+            #region Q2
+            int num;
+            Console.Write("Enter Number : ");
+            num = Convert.ToInt32(Console.ReadLine());
+            if (num < 0)
+                Console.WriteLine("Negative Number");
+            else
+                Console.WriteLine("Positive Number");
+            #endregion
             Console.ReadKey();
         }
     }
