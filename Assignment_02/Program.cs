@@ -22,6 +22,19 @@
             else
                 Console.WriteLine("Positive Number");
             #endregion
+            #region Q3
+            int[] Num = new int[3];
+            int max, min = 0;
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write("Enter Number " + $"{i + 1}" + " : ");
+                Num[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            max = Math.Max(Num[0], Math.Max(Num[1], Num[2]));
+            min = Math.Min(Num[0], Math.Min(Num[1], Num[2]));
+            Console.WriteLine("Maximum Number is : " + max);
+            Console.WriteLine("Minimum Number is : " + min);
+            #endregion
             Console.ReadKey();
         }
     }
